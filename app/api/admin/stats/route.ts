@@ -9,7 +9,7 @@ export async function GET() {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const stats = getDashboardStats();
+    const stats = await getDashboardStats();
     return NextResponse.json({ ok: true, stats });
   } catch (error) {
     console.error('Error fetching dashboard stats:', error);

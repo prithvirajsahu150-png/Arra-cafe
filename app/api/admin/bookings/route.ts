@@ -9,7 +9,7 @@ export async function GET() {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const bookings = getBookings();
+    const bookings = await getBookings();
     return NextResponse.json({ ok: true, bookings });
   } catch (error) {
     console.error('Error fetching admin bookings:', error);

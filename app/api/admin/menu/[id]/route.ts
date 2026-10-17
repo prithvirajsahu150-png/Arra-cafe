@@ -13,7 +13,7 @@ export async function GET(request: Request, { params }: RouteParams) {
   }
 
   const { id } = await params;
-  const item = getMenuItemById(id);
+  const item = await getMenuItemById(id);
   if (!item) {
     return NextResponse.json({ error: 'Item not found' }, { status: 404 });
   }
@@ -39,7 +39,7 @@ export async function PUT(request: Request, { params }: RouteParams) {
     if (description !== undefined) updates.description = description.trim();
     if (available !== undefined) updates.available = Boolean(available);
 
-    const updated = updateMenuItem(id, updates);
+    const updated = await updateMenuItem(id, updates);
     if (!updated) {
       return NextResponse.json({ error: 'Menu item not found' }, { status: 404 });
     }
@@ -59,7 +59,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
     }
 
     const { id } = await params;
-    const updated = toggleMenuItemAvailability(id);
+    const updated = await toggleMenuItemAvailability(id);
     if (!updated) {
       return NextResponse.json({ error: 'Menu item not found' }, { status: 404 });
     }
@@ -79,7 +79,7 @@ export async function DELETE(request: Request, { params }: RouteParams) {
     }
 
     const { id } = await params;
-    const deleted = deleteMenuItem(id);
+    const deleted = await deleteMenuItem(id);
     if (!deleted) {
       return NextResponse.json({ error: 'Menu item not found' }, { status: 404 });
     }

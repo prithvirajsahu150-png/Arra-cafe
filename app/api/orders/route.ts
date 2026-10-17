@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     const orderId = `ARRA-ORD-${Math.random().toString(36).substring(2, 7).toUpperCase()}`;
 
     // Record payment
-    const payment = createPayment({
+    const payment = await createPayment({
       paymentReference: `PAY-ORD-${Date.now().toString().slice(-6)}`,
       orderId,
       customerName: customer.name.trim(),

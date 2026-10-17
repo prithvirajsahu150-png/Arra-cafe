@@ -13,7 +13,7 @@ export async function GET(request: Request) {
     const category = searchParams.get('category') || undefined;
     const search = searchParams.get('search') || undefined;
 
-    const items = getMenuItems({ category, search });
+    const items = await getMenuItems({ category, search });
     return NextResponse.json({ ok: true, items });
   } catch (error) {
     console.error('Error fetching admin menu:', error);
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'A valid non-negative price is required.' }, { status: 400 });
     }
 
-    const newItem = createMenuItem({
+    const newItem = await createMenuItem({
       id: `item-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
       name: name.trim(),
       category: category.trim(),

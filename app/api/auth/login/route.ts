@@ -14,7 +14,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const admin = getAdminByEmail(email);
+    const admin = await getAdminByEmail(email);
     if (!admin) {
       return NextResponse.json(
         { error: 'Invalid email or password.' },

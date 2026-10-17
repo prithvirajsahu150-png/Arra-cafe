@@ -13,7 +13,7 @@ export async function GET(request: Request, { params }: RouteParams) {
   }
 
   const { id } = await params;
-  const offer = getOfferById(id);
+  const offer = await getOfferById(id);
   if (!offer) {
     return NextResponse.json({ error: 'Offer not found' }, { status: 404 });
   }
@@ -41,7 +41,7 @@ export async function PUT(request: Request, { params }: RouteParams) {
     if (active !== undefined) updates.active = Boolean(active);
     if (offerType !== undefined) updates.offerType = offerType;
 
-    const updated = updateOffer(id, updates);
+    const updated = await updateOffer(id, updates);
     if (!updated) {
       return NextResponse.json({ error: 'Offer not found' }, { status: 404 });
     }
@@ -61,7 +61,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
     }
 
     const { id } = await params;
-    const updated = toggleOfferActive(id);
+    const updated = await toggleOfferActive(id);
     if (!updated) {
       return NextResponse.json({ error: 'Offer not found' }, { status: 404 });
     }
@@ -81,7 +81,7 @@ export async function DELETE(request: Request, { params }: RouteParams) {
     }
 
     const { id } = await params;
-    const deleted = deleteOffer(id);
+    const deleted = await deleteOffer(id);
     if (!deleted) {
       return NextResponse.json({ error: 'Offer not found' }, { status: 404 });
     }

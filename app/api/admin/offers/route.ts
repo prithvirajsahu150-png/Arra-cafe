@@ -9,7 +9,7 @@ export async function GET() {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const offers = getOffers();
+    const offers = await getOffers();
     return NextResponse.json({ ok: true, offers });
   } catch (error) {
     console.error('Error fetching admin offers:', error);
@@ -37,7 +37,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Discount/value is required.' }, { status: 400 });
     }
 
-    const newOffer = createOffer({
+    const newOffer = await createOffer({
       title: title.trim(),
       description: description.trim(),
       discount: discount.trim(),

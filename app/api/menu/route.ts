@@ -8,7 +8,7 @@ export async function GET(request: Request) {
     const search = searchParams.get('search') || undefined;
     const availableOnly = searchParams.get('availableOnly') === 'true';
 
-    const items = getMenuItems({ category, search, availableOnly });
+    const items = await getMenuItems({ category, search, availableOnly });
     return NextResponse.json({ ok: true, items });
   } catch (error) {
     console.error('Error fetching public menu:', error);

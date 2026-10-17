@@ -9,7 +9,7 @@ export async function GET() {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const payments = getPayments();
+    const payments = await getPayments();
     return NextResponse.json({ ok: true, payments });
   } catch (error) {
     console.error('Error fetching admin payments:', error);

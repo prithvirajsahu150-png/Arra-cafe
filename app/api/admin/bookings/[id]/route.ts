@@ -22,7 +22,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
       return NextResponse.json({ error: 'Invalid booking status' }, { status: 400 });
     }
 
-    const updated = updateBookingStatus(id, bookingStatus, paymentStatus);
+    const updated = await updateBookingStatus(id, bookingStatus, paymentStatus);
     if (!updated) {
       return NextResponse.json({ error: 'Booking not found' }, { status: 404 });
     }

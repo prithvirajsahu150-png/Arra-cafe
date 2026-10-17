@@ -30,7 +30,7 @@ export async function POST(request: Request) {
 
     const bookingId = `ARRA-${Math.random().toString(36).substring(2, 7).toUpperCase()}`;
 
-    const newBooking = createBooking({
+    const newBooking = await createBooking({
       bookingId,
       purpose: purpose === 'Other' ? customPurpose : purpose,
       customPurpose,
