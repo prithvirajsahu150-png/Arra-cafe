@@ -1,0 +1,54 @@
+[
+  {
+    "id": "off-1",
+    "title": "FIRST ORDER SPECIAL",
+    "discount": "15% OFF",
+    "description": "Get 15% off on your first food delivery order.",
+    "couponCode": "ARRA15",
+    "startDate": null,
+    "endDate": null,
+    "active": true,
+    "offerType": "PERCENTAGE",
+    "createdAt": "2026-10-17T09:47:00.137Z",
+    "updatedAt": "2026-10-17T09:47:00.137Z"
+  },
+  {
+    "id": "off-2",
+    "title": "WEEKEND TREAT",
+    "discount": "20% OFF",
+    "description": "Enjoy your favourite dishes every Saturday & Sunday.",
+    "couponCode": "WEEKEND20",
+    "startDate": null,
+    "endDate": null,
+    "active": true,
+    "offerType": "PERCENTAGE",
+    "createdAt": "2026-10-17T09:47:00.137Z",
+    "updatedAt": "2026-10-17T09:47:00.137Z"
+  },
+  {
+    "id": "off-3",
+    "title": "BIRTHDAY SPECIAL",
+    "discount": "FREE DESSERT",
+    "description": "Celebrate your special day with a complimentary dessert on eligible bookings.",
+    "couponCode": null,
+    "startDate": null,
+    "endDate": null,
+    "active": true,
+    "offerType": "FREEBIE",
+    "createdAt": "2026-10-17T09:47:00.137Z",
+    "updatedAt": "2026-10-17T09:47:00.137Z"
+  },
+  {
+    "id": "off-4",
+    "title": "FAMILY FEAST",
+    "discount": "₹200 OFF",
+    "description": "Get ₹200 off on orders above ₹1,499.",
+    "couponCode": "FAMILY200",
+    "startDate": null,
+    "endDate": null,
+    "active": true,
+    "offerType": "FIXED",
+    "createdAt": "2026-10-17T09:47:00.137Z",
+    "updatedAt": "2026-10-17T09:47:00.137Z"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "paymentReference": "PAY-ARRA-AQQEQ-7756",
+    "bookingId": "ARRA-AQQEQ",
+    "customerName": "prithvirsj sahu",
+    "customerPhone": "7789843450",
+    "type": "Booking Advance",
+    "amount": 646,
+    "status": "Paid",
+    "method": "Online",
+    "id": "pay-1792237127758",
+    "createdAt": "2026-10-17T11:38:47.758Z"
+  }
+]

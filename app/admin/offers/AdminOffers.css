@@ -1,0 +1,118 @@
+/* Admin Offers CSS */
+
+.offers-admin-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.offers-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.offers-admin-title h2 {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.85rem;
+  color: var(--admin-text);
+  margin: 0;
+}
+
+.offers-admin-title p {
+  color: var(--admin-text-muted);
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.offer-admin-card {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--admin-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.offer-admin-card:hover {
+  box-shadow: var(--admin-shadow);
+  transform: translateY(-2px);
+}
+
+.offer-admin-card.inactive {
+  opacity: 0.7;
+  border-color: #ddd;
+}
+
+.offer-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.offer-badge-discount {
+  background: #fdf0f4;
+  color: var(--admin-primary);
+  border: 1px solid rgba(209, 32, 104, 0.2);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.offer-title-text {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.25rem;
+  color: var(--admin-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.offer-desc-text {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+.offer-meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #777;
+  background: #faf8f5;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.coupon-code-pill {
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--admin-text);
+  background: #fff;
+  padding: 0.2rem 0.5rem;
+  border: 1px dashed #d12068;
+  border-radius: 4px;
+}
+
+.offer-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f2efea;
+  padding-top: 1rem;
+}

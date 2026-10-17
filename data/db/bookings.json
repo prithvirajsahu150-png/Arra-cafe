@@ -1,0 +1,41 @@
+[
+  {
+    "bookingId": "ARRA-AQQEQ",
+    "purpose": "Birthday",
+    "customPurpose": "",
+    "date": "2027-01-05",
+    "time": "20:00",
+    "guests": "9",
+    "customer": {
+      "name": "prithvirsj sahu",
+      "phone": "7789843450",
+      "email": "prithvirajsahu150@gmail.com"
+    },
+    "specialRequirements": {
+      "decoration": true,
+      "cakeArrangement": false,
+      "specialTableSetup": false,
+      "additionalRequest": "birthday decoration"
+    },
+    "selectedItems": [
+      {
+        "name": "Curried Mushroom Sandwich",
+        "quantity": 5,
+        "price": 175
+      },
+      {
+        "name": "Chicken Steak Sandwich",
+        "quantity": 4,
+        "price": 185
+      }
+    ],
+    "totalAmount": 1615,
+    "advanceAmount": 646,
+    "remainingAmount": 969,
+    "paymentStatus": "Paid",
+    "bookingStatus": "Cancelled",
+    "id": "bkg-1792237127751",
+    "createdAt": "2026-10-17T11:38:47.751Z",
+    "updatedAt": "2026-10-17T11:41:36.780Z"
+  }
+]

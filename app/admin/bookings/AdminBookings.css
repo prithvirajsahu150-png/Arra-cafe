@@ -1,0 +1,136 @@
+/* Admin Bookings CSS */
+
+.bookings-admin-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bookings-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bookings-admin-title h2 {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.85rem;
+  color: var(--admin-text);
+  margin: 0;
+}
+
+.bookings-admin-title p {
+  color: var(--admin-text-muted);
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.bookings-controls-card {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: var(--admin-shadow-sm);
+}
+
+.bookings-table-card {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-border);
+  border-radius: 12px;
+  box-shadow: var(--admin-shadow);
+  overflow: hidden;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 0.28rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.status-badge.confirmed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.pending {
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.status-badge.completed {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-badge.cancelled {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* Amount tags */
+.amount-split-tag {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.8rem;
+}
+
+.total-amt {
+  font-weight: 700;
+  color: var(--admin-text);
+  font-size: 0.92rem;
+}
+
+.advance-amt {
+  color: #2e7d32;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.remaining-amt {
+  color: #d12068;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.status-select-inline {
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #d4d0ca;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.status-select-inline:focus {
+  outline: none;
+  border-color: var(--admin-primary);
+}
+
+/* Items Preview Pill */
+.items-preview-pill {
+  background: #f4f1eb;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: #555;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.items-preview-pill:hover {
+  background: #ebe5dc;
+}

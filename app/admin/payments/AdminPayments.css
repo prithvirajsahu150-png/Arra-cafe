@@ -1,0 +1,83 @@
+/* Admin Payments CSS */
+
+.payments-admin-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.payments-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.payments-admin-title h2 {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.85rem;
+  color: var(--admin-text);
+  margin: 0;
+}
+
+.payments-admin-title p {
+  color: var(--admin-text-muted);
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.payments-table-card {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-border);
+  border-radius: 12px;
+  box-shadow: var(--admin-shadow);
+  overflow: hidden;
+}
+
+/* Payment Status Badges */
+.payment-badge {
+  display: inline-block;
+  padding: 0.28rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.payment-badge.paid {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.payment-badge.pending {
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.payment-badge.failed {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.payment-badge.refunded {
+  background: #ede7f6;
+  color: #512da8;
+}
+
+.type-pill {
+  display: inline-block;
+  background: #f4f1eb;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.ref-code {
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--admin-text);
+  font-size: 0.85rem;
+}

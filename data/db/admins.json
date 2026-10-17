@@ -1,0 +1,11 @@
+[
+  {
+    "id": "admin-1",
+    "email": "admin@arracafe.com",
+    "passwordHash": "26f3390ec0666fce2fe0fc5e59242000c4cdb1dbb35320fd740a56a20d2768597456e4312a049694b090de0fb97e3aaf95b2f4ad54708ad0f635fedc52a8059a",
+    "salt": "70ee56317ef5332960e26389a77f5c08",
+    "name": "Arra Cafe Admin",
+    "createdAt": "2026-10-17T09:47:00.238Z",
+    "updatedAt": "2026-10-17T09:47:00.238Z"
+  }
+]

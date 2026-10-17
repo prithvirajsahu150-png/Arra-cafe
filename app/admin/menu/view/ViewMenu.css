@@ -1,0 +1,210 @@
+/* Admin View Menu CSS */
+
+.view-menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.view-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.view-menu-header-text h2 {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.85rem;
+  color: var(--admin-text);
+  margin: 0;
+}
+
+.view-menu-header-text p {
+  color: var(--admin-text-muted);
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.view-customer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--admin-primary);
+  color: #fff;
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(209, 32, 104, 0.25);
+  transition: all 0.2s ease;
+}
+
+.view-customer-btn:hover {
+  background: var(--admin-primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Category Sections */
+.view-category-section {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--admin-shadow-sm);
+}
+
+.category-header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f0ede8;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.category-header-title h3 {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.3rem;
+  color: var(--admin-text);
+  margin: 0;
+}
+
+.category-count-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--admin-text-muted);
+  background: #f4f1eb;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+}
+
+.customer-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.customer-item-card {
+  border: 1px solid #ebe7e1;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.customer-item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.customer-card-media {
+  height: 150px;
+  width: 100%;
+  background: #f7f5f0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customer-card-placeholder {
+  font-family: var(--font-playfair), serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #c9c5bd;
+}
+
+.availability-pill {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(6px);
+}
+
+.availability-pill.available {
+  background: rgba(46, 125, 50, 0.9);
+  color: #fff;
+}
+
+.availability-pill.unavailable {
+  background: rgba(198, 40, 40, 0.9);
+  color: #fff;
+}
+
+.customer-card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.customer-card-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--admin-text);
+  margin-bottom: 0.25rem;
+}
+
+.customer-card-category {
+  font-size: 0.75rem;
+  color: var(--admin-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.customer-card-desc {
+  font-size: 0.82rem;
+  color: #777;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  flex: 1;
+}
+
+.customer-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f4f1eb;
+  padding-top: 0.75rem;
+  margin-top: auto;
+}
+
+.customer-card-price {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--admin-primary);
+}
+
+.customer-status-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.customer-status-text.ok {
+  color: #2e7d32;
+}
+
+.customer-status-text.no {
+  color: #c62828;
+}
